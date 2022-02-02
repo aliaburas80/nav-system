@@ -10,7 +10,7 @@ const Aboutme = () => {
                 {"\n"}
                 {"\n"}
             </Text>
-            <Text numberOfLines={20}>{bodyText}</Text>
+            <Text style={styles.bodyText} numberOfLines={20}>{bodyText}</Text>
         </View>
     )
 }
@@ -21,7 +21,11 @@ const styles = StyleSheet.create({
         flex: 1,
         alignSelf: 'stretch',
         width: null,
-        backgroundColor:'#efefef'
+        backgroundColor:'#efefef',
+        justifyContent: 'center',
+    },
+    bodyText:{
+        fontSize:16
     },
     baseText: {
         fontSize: 16,
